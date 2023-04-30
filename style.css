@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+}
+
+body {
+    text-align: left;   
+    margin-top: 5%;
+    margin-left: 10%;
+    background-color: #80ffdb;
+    font-family: 'Cormorant SC', serif;
+}
+
+h1 {
+    font-size: 40px;
+    color: #5390d9;
+  }
+  
+  h2 {
+    font-size: 25px;
+    color: #4ea8de;
+  }
+  
+  form {
+    font-size: 20px;
+    color: #7400b8;
+  }
+
+  table {
+    font-size: 25px;
+    color: #5e60ce;
+  }
+
+
+

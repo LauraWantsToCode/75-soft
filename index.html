@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;500&display=swap" rel="stylesheet"> 
+    <title>75 Soft Challenge</title>
+</head>
+<body>
+    <h1>75 Soft Challenge <IMG SRC="./flowers-flower.gif" style="height: 70px;"></h1> <br><br>
+   <h2> 75 Soft Challenge has been created to help you create better habits. <br>
+    It includes you completing every task daily for 75 days, and if you fail - you start the 75 days again.</h2> <br><br>
+   
+    <form>
+        <input type="checkbox" id="challenge1" name="challenge1" value="Eat healthy">
+        <label for="challenge1"> Eat healthy</label><br>
+        <input type="checkbox" id="challenge2" name="challenge2" value="Exercise">
+        <label for="challenge2"> Exercise 45 minutes </label><br>
+        <input type="checkbox" id="challenge3" name="challenge3" value="Alco">
+        <label for="challenge3"> No alcohol</label><br>
+        <input type="checkbox" id="challenge4" name="challenge4" value="Water">
+        <label for="challenge4"> Drink 2.5 liters of water</label><br>
+        <input type="checkbox" id="challenge5" name="challenge5" value="Read">
+        <label for="challenge5"> Read 10 pages of any book</label><br>
+        <input type="checkbox" id="challenge6" name="challenge6" value="Additional">
+        <label for="challenge6"> Your own new habit (take a progress selfie, floss, ...)</label><br><br>
+        <input type="checkbox" id="exception" name="exception" value="Exception">
+        <label for="exception"> If you struggled to complete your daily challenge - was it an exception (social event, etc)?</label><br><br>
+        <button type='button' onclick="funcdaycount()">submit</button> 
+      </form>
+
+
+
+      <table>
+        <tr>
+          <th></th>
+          <th></th>
+        </tr>
+   
+     <tr>
+       <td>Days completed: </td>
+       <td id="dayscompleted">0</td>
+     </tr>
+     </table> 
+
+
+<!-- 
+    Still need: 
+uncheck all boxes when function executed
+fully refresh all stats when a day is skipped - now just shows 0 for a moment, when another day inputed - adds to initial. 
+local storage
+ -->
+
+    <script src="./app.js"></script>
+</body>
+</html>
