@@ -42,7 +42,6 @@ h1 {
 {
   /* Checkbox text */
   display: inline;
-  font-size: 20px;
   color: #7400b8;
 }
 
@@ -56,3 +55,19 @@ h1 {
   }
 
 
+  button {
+  border: 3px solid  #7400b8; 
+  color:  #7400b8;
+  background-color: #80ffdb;
+  border-radius: 25px;
+  font-size: 20px; 
+  letter-spacing: 1.5px; 
+  padding: 0.5% 3%; 
+  }
+
+  button:hover {
+    background-color: #7400b8;
+    color:  #80ffdb;
+  }
+
+  
