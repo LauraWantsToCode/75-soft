@@ -15,18 +15,20 @@ function funcdaycount() {
    var challenge6 = document.getElementById("challenge6");
    var exception = document.getElementById("exception");
 
-    if (challenge1.checked == true && challenge2.checked == true && challenge3.checked == true &&
-         challenge4.checked == true && challenge5.checked == true && challenge6.checked == true ) 
-         {
-        // the person completed all 6 tasks during the day & gets a day added to the count
-        return document.getElementById('dayscompleted').innerHTML = ++daysCompl;
-
-      } else if ( exception.checked == true) {
+    if ( exception.checked == true) {
         // the person had a reason why they didn't finish the daily challenge - no addition to the current count
         return document.getElementById('dayscompleted').innerHTML = daysCompl;
-      } else {
-        // not exception and challenge not completed - back to 0
-        return document.getElementById('dayscompleted').innerHTML = 0;
-      }    
-}
+    } else { 
+                    if (challenge1.checked == true && challenge2.checked == true && challenge3.checked == true &&
+                    challenge4.checked == true && challenge5.checked == true && challenge6.checked == true ) 
+                    {
+                // the person completed all 6 tasks during the day & gets a day added to the count
+                return document.getElementById('dayscompleted').innerHTML = ++daysCompl;
+                    } 
+                    else {
+                // not exception and challenge not completed - back to 0
+                daysCompl = 0; 
+                return document.getElementById('dayscompleted').innerHTML = daysCompl;
+            }    
+    }}
 
