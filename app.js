@@ -51,3 +51,8 @@ function funcdaycount() {
             }    
     }}
 
+
+// Set local storage
+localStorage.setItem("totalcount", daysCompl);
+// Retrieve total count of days
+document.getElementById("dayscompleted").innerHTML = localStorage.getItem("totalcount");
